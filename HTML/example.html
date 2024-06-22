@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Документ HTML5</title>
+    <style>
+        table td {
+            padding: 5px;
+            margin: 5px;
+            background-color: antiquewhite;
+        }
+
+        div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+        h3{
+            margin-top: 0;
+        }
+
+        input,
+        textarea,
+        button {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;           
+        }
+    </style>
+</head>
+
+<body>
+    <div>Содержание документа HTML5</div>
+    <div>
+        <h3>02 Списки</h3>
+        <select>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">Юриспруденция</option>
+        </select>
+    </div>
+
+    <div>
+        <h3>03 Таблицы</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Компания</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nexus 6P</td>
+                    <td>Huawei</td>
+                    <td>49000</td>
+                </tr>
+                <tr>
+                    <td>iPhone 6S PLus</td>
+                    <td>Apple</td>
+                    <td>62000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Информация по состоянию на 17 марта</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br />
+        <br />
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Компания</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Nexus 6P объедил <br /> 2 ячейки в столбце</td>
+                    <td colspan="2">Huawei объединил 2 ячейки в строке </td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>62000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h3>06 Формы</h3>       
+        <input type="text"/>
+        <input type="checkbox" checked/>
+        <input type="file"/>
+        <input type="password" value="123"/>
+        <input type="button" value="Кнопка"/>
+        <button>Кнопка с текстом</button>       
+        <textarea name="comment" placeholder="Введите..." cols="50" rows="4"></textarea>
+    </div>
+
+</body>
+
+</html>
